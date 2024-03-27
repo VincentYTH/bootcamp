@@ -1,4 +1,3 @@
-package questions;
 /**
  * Expected Output:
  * 
@@ -11,7 +10,6 @@ package questions;
 public class JavaQuest2 {
   public static void main(String[] args) {
     int a = 10;
-    int b = 3 * a % 3;
     if (a == 9) {
       System.out.println("a is equals to 9");
     } else if (a < 9 && a >= 0) {
