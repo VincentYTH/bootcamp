@@ -120,5 +120,23 @@ public class DemoIf {
             System.out.println("No");
         }
 
+        int age=18;
+        String lastName="Lau";
+        if (age==18 && "Lau".equals(lastName)) {//  && priority more than ||, 加括號可以優先（）||
+            System.out.println("Yes");
+        }else{
+            System.out.println("No");
+        }
+
+        System.out.println(true&&false);//false
+        System.out.println(false&&true);//false
+        System.out.println(false&&false);//false
+        System.out.println(true&&true);//true
+
+        System.out.println(true||false);//true
+        System.out.println(false||true);//true
+        System.out.println(false||false);//false
+        System.out.println(true||true);//true
+        
     }
 }
