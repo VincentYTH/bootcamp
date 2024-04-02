@@ -64,24 +64,6 @@ public class DemoForloop2 {
       System.out.println("Hello");
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     //    *
     //   ***
     //  *****
@@ -91,6 +73,20 @@ public class DemoForloop2 {
     //  *****
     //   ***
     //    *
+    int s=9;
+    for(int i=0; i<s; i++){
+      for(int j=s; j>s; j--){
+
+      }
+    }
+
+
+
+
+
+
+
+
 
 
   }

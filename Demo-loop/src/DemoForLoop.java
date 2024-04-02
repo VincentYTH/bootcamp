@@ -47,8 +47,8 @@ public class DemoForLoop {
 
     //if cd -> print "true" ; s="abcdefg"
     String pattern = "cd";
-    for(int i5=0; i5<s.length(); i5++){
-      
+    if (s.contains(pattern)) {
+      System.out.println("true");
     }
 
     //55=1+2+3+4+......+10 -> print out 55
@@ -89,9 +89,6 @@ public class DemoForLoop {
       }
     }
     System.out.println(R4);
-
-
-
 
 
 
