@@ -156,11 +156,11 @@ public class DemoArray {
         // Store all index of '!' in another array -> 2,4
         char[] characters2 = new char[] {'a', 'b', '!', 'c', '!'};
         int[] indexes = new int[characters2.length];
-        int j = 0;
+        int c = 0;
         for (int i = 0; i < characters2.length; i++) {
             if ('!' == characters2[i]) {
-                indexes[j] = i;
-                j++;
+                indexes[c] = i;
+                c++;
             }
         }
         System.out.println(Arrays.toString(indexes));
@@ -178,6 +178,75 @@ public class DemoArray {
         }
         System.out.println(amount);
 
+        //Swapping
+        int[] arr3 = new int[]{10,3,9,4};
+        int temp=arr3[0];
+        arr3[0]=arr3[2];
+        arr3[2]=temp;
+        System.out.println(Arrays.toString(arr3));//[9,3,10,4]
+
+        //now: [9,3,10,4] -> [3,10,4,9]
+        for(int i=0; i<arr3.length-1; i++){
+            temp=arr3[i];
+            arr3[i]=arr3[i+1];
+            arr3[i+1]=temp;
+        }
+        System.out.println(Arrays.toString(arr3));
+
+        //now: [3,10,4,9] -> [10,3,4,9](move the max value to the head of the array)
+        int Max=Integer.MIN_VALUE;
+        int idx=-1;
+        for(int i=0; i<arr3.length; i++){
+            if (arr3[i]>Max) {
+                Max=arr3[i];
+                idx=i;
+            }
+        }
+        for(int i=idx; i>0; i--){
+            temp=arr3[i];
+            arr3[i]=arr3[i-1];
+            arr3[i-1]=temp;
+        }
+        System.out.println(Arrays.toString(arr3));
+
+        //Sorting - Bubble Sort
+        int arr4[]=new int[]{-10,-42,8,19,1};//->[-42,-10,1,8,19]
+        for(int i=0; i<arr4.length-1; i++){//第一輪：最大值排到最後；第二輪：第二大值排到倒數第二位置......
+            for(int k=0; k<arr4.length-i-1; k++){
+                if (arr4[k]>arr4[k+1]) {
+                    temp=arr4[k];
+                    arr4[k]=arr4[k+1];
+                    arr4[k+1]=temp;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(arr4));
+
+        //Sorting - Insertion Sort
+        int arr5[]=new int[]{-10,-5,30,9,1,-100};//第一輪：前兩個值作比較並排序；第二輪：前三個值作比較並排序......
+        for(int i=1; i<arr5.length; i++){
+            for(int j=i; j>0; j--){
+                if (arr5[j]<arr5[j-1]) {
+                    temp=arr5[j];
+                    arr5[j]=arr5[j-1];
+                    arr5[j-1]=temp;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(arr5));
+
+        for(int i=1; i<arr5.length; i++){
+            int key = arr5[i];
+            int k;
+            for(k=i-1; k>=0; k--){
+                if(arr5[k]<=key){
+                    break;
+                }
+                arr5[k+1]=arr5[k];
+            }
+            arr5[k+1]=key;
+        }
+        System.out.println(Arrays.toString(arr5));
 
     }
 }

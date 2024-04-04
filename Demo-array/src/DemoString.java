@@ -47,7 +47,15 @@ public class DemoString {
 
     //indexOf()
     char c=s.charAt(2);//'l'
-    System.out.println(s.indexOf('l'));//the index of the first mathcing character
+    System.out.println(s.indexOf('l'));//2; the index of the first mathcing character
     System.out.println(s.indexOf('z'));//-1
+    System.out.println(s.lastIndexOf('l'));//3; the index of the last mathcing character
+    System.out.println(s.indexOf("ll"));//2
+
+    //equalsIgnoreCase()
+    System.out.println("hello".equals("HELLO"));//false
+    System.out.println("hello".equalsIgnoreCase("HELLO"));//true
+    System.out.println("hello".equalsIgnoreCase("HELLO "));//false
+
   }
 }

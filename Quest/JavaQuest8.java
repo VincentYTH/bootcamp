@@ -15,7 +15,7 @@ public class JavaQuest8 {
     int secondMax=Integer.MIN_VALUE;
     for(int i=0; i<6; i++){
       if (nums[i]>max) {
-        max=nums[i];
+          max=nums[i];
       }for(int j=0; j<6; j++){
         if (nums[j]>secondMax && nums[j]<max) {
           secondMax=nums[j];
