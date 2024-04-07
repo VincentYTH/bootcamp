@@ -83,5 +83,10 @@ public class DemoWrapper {
         // Long l5=i5;Upcast Cannot auto-box
         Long L5=(long)i5;
 
+        //Float.value of()
+        Float f2=Float.valueOf("1.0");
+        //f2.compareTo(...) -> 0,-1,1
+        //f2.equals(...) -> true,false
+
     }
 }
