@@ -10,3 +10,5 @@
 - for loop
 - array (for loop, index)
 - Static method (input parameter, method signature, return type)
+
+BADABADC*CA

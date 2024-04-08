@@ -110,5 +110,16 @@ public class Datatype {
     byte b11=11;
     short s10=(short) (b10+b11);
     System.out.println(s10);
+
+    int a10=0;
+    while (a10<3) {
+      switch (a10) {
+        case 0:
+          System.out.println("0");
+        case 2:
+          System.out.println("2");
+      }
+      a10++;
+    }
   }
 }
