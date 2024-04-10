@@ -1,3 +1,4 @@
+package Quest;
 /*
  * Sum up to Zero
  */
@@ -53,17 +54,4 @@ public class JavaQuest16 {
     }
 
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

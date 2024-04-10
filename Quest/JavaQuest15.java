@@ -1,3 +1,4 @@
+package Quest;
 /*
  * Expected Output : 
  * Example 1. 33% , The percentage of characters in s that equal the letter 'o' is 2 / 6 * 100% = 33% when rounded down, so we return 33.
@@ -34,6 +35,6 @@ public class JavaQuest15 {
         num++;
       }
     }
-    return (int)((num/strLength)*100);
+    return (int)(num/strLength*100);
   }
 }

@@ -11,4 +11,4 @@
 - array (for loop, index)
 - Static method (input parameter, method signature, return type)
 
-BADABADC*CA
+BADAB *A DC *C A

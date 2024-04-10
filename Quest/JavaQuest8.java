@@ -1,3 +1,4 @@
+package Quest;
 /**
  * Example Output
  * Second Max = 230

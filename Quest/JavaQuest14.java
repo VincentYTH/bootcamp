@@ -1,3 +1,4 @@
+package Quest;
 public class JavaQuest14 {
   // Given an integer x, return true if x is a palindrome (迴文), and false
   // otherwise.

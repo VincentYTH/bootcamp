@@ -1,3 +1,4 @@
+package Quest;
 public class JavaQuest13 {
   // You are given a non-negative floating point number rounded to two decimal places celsius, that denotes the temperature in Celsius.
   // You should convert Celsius into Kelvin and Fahrenheit by methods

@@ -18,5 +18,6 @@ public class Test {
     String s="hello";//char[] -> 'h','e'......
     boolean b=false;
     System.out.println(b);//initialization before use
+
   }
 }

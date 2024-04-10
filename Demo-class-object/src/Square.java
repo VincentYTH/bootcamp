@@ -21,3 +21,10 @@ public class Square {
   }
 
 }
+
+public static void main(String[] args) {
+  Square square=new Square();
+  square.setLength(13);
+  System.out.println(square.toString());//"Square(length=13)"
+  System.out.println(square.getArea());//169
+}

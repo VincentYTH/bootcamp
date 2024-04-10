@@ -1,4 +1,4 @@
-public class Customer {
+public class CustomerV {
   
   private String customer;//Sales Area 1: HSBC, BOCHK; Sales Area 2: BEA, SCB; Sales Area 3: AEON, CITI
   private int salesArea;
@@ -37,8 +37,8 @@ public class Customer {
 
 
   public static void main(String[] args) {
-  Customer c1 = new Customer();
-  Customer c2 = new Customer();
+  CustomerV c1 = new CustomerV();
+  CustomerV c2 = new CustomerV();
   c1.setCustomer("HSBC");
   c2.setCustomer("CITI");
   System.out.println(c1.toString());

@@ -1,3 +1,4 @@
+package Quest;
 public class JavaQuest5 {
   /**
    * 
