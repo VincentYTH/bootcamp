@@ -1,4 +1,4 @@
-package Quest;
+package exercise;
 /**
  * Input: arrivalTime = 15, delayedTime = 5
  * Output: 20 

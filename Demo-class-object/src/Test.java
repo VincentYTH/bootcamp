@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Test {
   public static void main(String[] args) {
     Car car=new Car();//Still work, because the class "Car" is public

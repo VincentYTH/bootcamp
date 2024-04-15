@@ -1,4 +1,4 @@
-package Quest;
+package exercise;
 /*
  * 
  * Question : Given a positive integer num consisting only of digits 3 and 5. Return the minimum number you can get by changing at most two digit (3 becomes 5, or 5 becomes 3).
@@ -34,6 +34,6 @@ public class JavaQuest17 {
           count++;
         }
       }
-    return Integer.parseInt(arr[0] + arr[1] + arr[2] + arr[3]);
+    return Integer.valueOf(arr[0] + arr[1] + arr[2] + arr[3]);
   }
 }

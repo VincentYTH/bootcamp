@@ -31,7 +31,7 @@ public class Test {
     // Staff s1 = new Staff("John");// private constructor
 
     // Static Method
-    Staff s2 = Staff.of("John", 20000);
+    Staff s2 = Staff.of("John");
     // Staff s3 = Staff.peter();
 
     // Instance Method
@@ -46,5 +46,15 @@ public class Test {
     test2(new String[]{"hello", "world", "ccc"});
     test(new String[]{"hello", "world", "ccc"});
 
+    System.out.println(Staff.PI);
+
+  }
+
+  public int getV() {
+    return v;
+  }
+
+  public void setV(int v) {
+    this.v = v;
   }
 }

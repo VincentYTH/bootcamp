@@ -1,4 +1,4 @@
-package Quest;
+package exercise;
 public class JavaQuest5 {
   /**
    * 

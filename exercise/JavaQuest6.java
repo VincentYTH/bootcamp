@@ -1,4 +1,4 @@
-package Quest;
+package exercise;
 import java.util.Arrays;
 
 public class JavaQuest6 {

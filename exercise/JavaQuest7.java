@@ -1,4 +1,4 @@
-package Quest;
+package exercise;
 /**
  * The sum is 55
  */

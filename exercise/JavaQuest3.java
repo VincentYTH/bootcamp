@@ -1,4 +1,4 @@
-package Quest;
+package exercise;
 import java.util.Scanner;
 
 public class JavaQuest3 {

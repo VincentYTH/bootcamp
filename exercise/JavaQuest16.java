@@ -1,4 +1,4 @@
-package Quest;
+package exercise;
 /*
  * Sum up to Zero
  */

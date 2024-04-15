@@ -1,4 +1,4 @@
-package Quest;
+package exercise;
 /**
  * Case 1: [2,7,11,15] Target: 9 Ans: [0, 1] or [1, 0]
  * 

@@ -1,4 +1,4 @@
-package Quest;
+package exercise;
 /**
  * Example Output
  * Second Max = 230

@@ -1,4 +1,4 @@
-package Quest;
+package exercise;
 /*
  * 
  * Question : Given an array of strings words, 
