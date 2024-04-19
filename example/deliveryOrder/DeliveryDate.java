@@ -1,4 +1,4 @@
-package DeliveryOrder;
+package deliveryOrder;
 
 import java.util.Arrays;
 

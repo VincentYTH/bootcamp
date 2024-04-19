@@ -20,7 +20,7 @@ public class Hand {
     return this.cards;
   }
 
-  private static boolean isFourKind(Card[] cards){//check if there are same 4 cards of 5 cards
+  public static boolean isFourKind(Card[] cards){//check if there are same 4 cards of 5 cards
     if (cards.length != 5) {
       return false;
     }

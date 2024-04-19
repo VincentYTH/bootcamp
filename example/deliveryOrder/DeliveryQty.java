@@ -1,4 +1,4 @@
-package DeliveryOrder;
+package deliveryOrder;
 
 public class DeliveryQty {
   

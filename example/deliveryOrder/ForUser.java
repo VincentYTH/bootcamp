@@ -1,4 +1,4 @@
-package DeliveryOrder;
+package deliveryOrder;
 
 public class ForUser {
   public static void main(String[] args) {
