@@ -72,6 +72,6 @@ public class Staff {
     newIntegers.remove(Integer.valueOf(24));
     System.out.println(newIntegers.toString()); // [2, 4]
     System.out.println(newIntegers.contains(Integer.valueOf(4))); // true
-
+    
   }
 }

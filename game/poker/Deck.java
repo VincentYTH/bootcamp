@@ -35,11 +35,11 @@ public class Deck {
     return new Deck(false);
   }
 
+  @Override
   public String toString(){
     return "Deck("//
     + "cards=" + Arrays.toString(cards);
   }
-
 
   public static void main(String[] args) {
     // Deck deck = new Deck();

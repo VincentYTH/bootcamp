@@ -1,7 +1,5 @@
 package game.poker;
 
-import java.util.Arrays;
-
 public class Rules {
 
   // Design: Single Card
