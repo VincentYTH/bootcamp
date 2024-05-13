@@ -11,5 +11,6 @@
 - array (for loop, index)
 - Static method (input parameter, method signature, return type)
 
-  DDDDACABB
 
+
+D*ADA*AD

@@ -8,7 +8,6 @@ import java.util.Set;
 
 public class Customer2 {
   
-  private ArrayList<Order> orders;
   private String name;
 
   public String getName(){
@@ -33,7 +32,7 @@ public class Customer2 {
     // Polymorphism
     // List (ArrayList)
     List<String> ss = new ArrayList<>();
-    // ss object reference can only point to methods that comply with Lish interface
+    // ss object reference can only point to methods that comply with List interface
     ss.add("hello");
     ss.remove(0);
     ss.add("abc");
@@ -52,7 +51,7 @@ public class Customer2 {
 
     Collection<String> cs = new ArrayList<>();
     cs.add("hello");
-    System.out.println(cs.size()); // 1
+    System.out.println(cs.size()); // 16
 
     test(new ArrayList<>(List.of("hello", "Vincent"))); // hello
     test(new HashSet<>(Set.of("world"))); 
