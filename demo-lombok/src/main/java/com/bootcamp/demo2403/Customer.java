@@ -2,6 +2,7 @@ package com.bootcamp.demo2403;
 
 import java.util.LinkedList;
 import java.util.List;
+import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -11,6 +12,7 @@ import lombok.ToString;
 @Setter
 @EqualsAndHashCode
 @ToString
+@AllArgsConstructor
 
 public class Customer {
   private String name;

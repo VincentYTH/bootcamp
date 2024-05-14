@@ -18,7 +18,7 @@ import java.util.List;
 
 // command "mvn clean install" -> get folder, check dependency, compile class folder, bundle a single java
 
-public class basic {
+public class Basic {
   public static void main(String[] args) {
     StringBuilder sb = new StringBuilder();
     int x = (int) Math.pow(2.0, 2.0);
