@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "ApiResp",
+      "request": "launch",
+      "mainClass": "com.bootcamp.demo.demo_sb_restful.infra.ApiResp",
+      "projectName": "demo-sb-restful"
+    },
+    {
+      "type": "java",
+      "name": "TestController",
+      "request": "launch",
+      "mainClass": "com.bootcamp.demo.demo_sb_restful.controller.impl.TestController",
+      "projectName": "demo-sb-restful"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-DemoSbHelloworldApplication<demo-sb-helloworld>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.bootcamp.demo.demosbhelloworld.DemoSbHelloworldApplication",
+      "projectName": "demo-sb-helloworld",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
