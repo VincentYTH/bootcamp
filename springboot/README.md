@@ -13,6 +13,7 @@
 - @ExceptionHandler
 - @SpringBootTest, @WebMvcTest, @MockBean, @SpyBean
 - mockMvc.perform(), andExpect()
+- @Value
 
 ### Maven Project - Java/Spring boot
 ### Lombok

@@ -32,7 +32,7 @@ import static org.hamcrest.Matchers.hasItem;
 class StockControllerTest {
 
   // @Autowired
-  // private StockController stockController;
+  // private S  tockController stockController;
 
   @MockBean
   private StockService stockService;

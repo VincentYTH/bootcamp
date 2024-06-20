@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "DemoSbRestfulApplication",
+      "request": "launch",
+      "mainClass": "com.bootcamp.demo.demo_sb_restful.DemoSbRestfulApplication",
+      "projectName": "demo-sb-restful"
+    },
+    {
+      "type": "java",
       "name": "ApiResp",
       "request": "launch",
       "mainClass": "com.bootcamp.demo.demo_sb_restful.infra.ApiResp",

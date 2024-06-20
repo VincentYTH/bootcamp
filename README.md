@@ -13,4 +13,25 @@
 
 
 
-DDDAADAAD
+## CV
+- 
+
+## JobsDB
+- !Recutivement firm jobs
+
+- salary 17K - 25K
+
+- sort by date
+
+# Tech Stacks:
+- Devops, CI/CD pipeline, typescript, Terraform, Kubernetes
+
+# Avoid:
+- PHP, .NET
+
+# Selection Tips:
+Tech Stacks; Team Size; Team's Vision; Project% or BAU%; What Appliactions
+
+# Proirity
+Tech Stacks > Project Scale > Job Content > Company
+

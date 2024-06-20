@@ -6,8 +6,11 @@ import java.util.LinkedList;
 import java.util.List;
 import com.bootcamp.demo.demo_sb_restful.dto.UserDTO;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.ToString;
 
+@ToString
 public class ApiResp<T> {
 
   private int code;
@@ -48,7 +51,17 @@ public class ApiResp<T> {
     }
 
     public ApiRespBuilder<T> message(String message){
+      if (message == null)
+        throw new NullPointerException("message is marked non-null but is null");
       this.message = message;
+      return this;
+    }
+
+    public ApiRespBuilder<T> error(ErrorCode errorCode){
+      if (errorCode == null)
+        throw new NullPointerException("message is marked non-null but is null");
+      this.code = errorCode.getCode();
+      this.message = errorCode.getDesc();
       return this;
     }
 
@@ -77,7 +90,7 @@ public class ApiResp<T> {
 
   public static void main(String[] args) {
     // Java 9
-    List<String> strings = List.of("abc", "def");
+    // List<String> strings = List.of("abc", "def");
     // better peformance
 
     // Immutable:
@@ -103,14 +116,26 @@ public class ApiResp<T> {
       .data(List.of(new UserDTO()))
       .build();
 
+    // Test RestTemplate.getForObject()
+    // 1. Call web API, return JSON
+    // 2. Using ObjectMapper for deserialization
     // Object -> JSON
     ObjectMapper objectMapper = new ObjectMapper();
-    String jsonResponse = new String();
+    String jsonResponse = "";
     try {
       jsonResponse = objectMapper.writeValueAsString(response);
     } catch (JsonProcessingException e) {
       
     }
     System.out.println(jsonResponse);
+
+    try {
+      TypeReference<ApiResp<UserDTO>> reference = new TypeReference<>() {};
+      ApiResp<UserDTO> response2 = objectMapper.readValue(jsonResponse, reference);
+      System.out.println(response2);
+    } catch (JsonProcessingException e) {
+      System.out.println("error.");
+    }
+
   }
 }
