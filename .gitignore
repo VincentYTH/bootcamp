@@ -1,2 +1,5 @@
+.gitignore
+gitpush.sh
+
 springboot/
 springboot-project/
