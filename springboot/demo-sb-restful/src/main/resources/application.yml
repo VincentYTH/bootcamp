@@ -1,0 +1,34 @@
+server:
+  port: 8083
+
+api:
+  json-place-holder:
+    domain: 'jsonplaceholder.typicode.com'
+    endpoints:
+      users: '/users'
+      posts: '/posts'
+      albums: '/albums'
+  json-gov-hospital:
+    domain: 'www.ha.org.hk'
+    endpoints:
+      data: '/opendata/hosp-bed-en.json'
+  weather:
+    domain: "data.weather.gov.hk"
+    base-paths: "weatherAPI,opendata"
+    open-data:
+      endpoint: "/opendata.php"
+
+database: 
+  db-name: "db_2403"
+
+spring:
+  datasource:
+    driverClassName: "org.postgresql.Driver"
+    url: "jdbc:postgresql://localhost:5432/${database.db-name}"
+    username: "postgres"
+    password: "1234"
+
+spring.jpa:
+  show-sql: true
+  hibernate.ddl-auto: update # update
+  # Hibernate ddl auto (create, create-drop, validate, update)
